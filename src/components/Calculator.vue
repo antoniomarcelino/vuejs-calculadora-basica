@@ -1,5 +1,8 @@
 <template>
+<div>
+  <h1 style="padding: 1rem 0; font-weight: bold;">Calculadora Básica</h1>
   <div class="calculator">
+      
     <div class="display">{{ current || '0' }}</div>
 
     <div @click="clear" class="button">C</div>
@@ -25,9 +28,10 @@
     <Button id="zero" :value="0" @append="(value) => append(value)"/>
     <OperatorButton :operator="'.'" @dot="dot()" />
     <OperatorButton :operator="'='" @equal="equal()" />
-
-    
   </div>
+  <h5 style="padding: 1rem 0;">Esta é uma calculadora básica criada com VUE JS.</h5>
+</div>
+  
 </template>
 
 <script>
@@ -38,7 +42,7 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      current: '600',
+      current: '',
       operation: null,
       previous: null,
       operatorClicked: false,
@@ -89,13 +93,13 @@ export default {
 
 <style scoped>
 .calculator {
-  padding-top: 100px;
   width: 400px;
   margin: 0 auto;
   font-size: 38px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(50px, auto);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .display {
