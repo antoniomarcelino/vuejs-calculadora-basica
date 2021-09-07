@@ -1,24 +1,5 @@
-# calculator
+# Calculadora Básica em VUE JS
 
-## Project setup
-```
-npm install
-```
+## Para acessar o projeto clique [aqui](https://vuejs-calculadora-basica.vercel.app)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![presentation-image](https://github.com/antoniomarcelino/vuejs-calculadora-basica/blob/master/src/assets/presentation-image.PNG)
